@@ -43,6 +43,12 @@
                 "default": "/example"
             },
             {
+                "name": "projectname",
+                "type": "string",
+                "example": "bolt",
+                "default": "bolt"
+            },
+            {
                 "name": "is_public",
                 "type": "boolean",
                 "default": true
