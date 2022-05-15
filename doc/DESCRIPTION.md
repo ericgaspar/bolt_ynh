@@ -1,9 +1,5 @@
-Some long and extensive description of what the app is and does, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Bolt is a tool for Content Management, which strives to be as simple and straightforward as possible.
 
-### Features
+It is quick to set up, easy to configure, uses elegant templates, and above all, it's a joy to use!
 
-- Ut enim ad minim veniam, quis nostrud exercitation ullamco ;
-- Laboris nisi ut aliquip ex ea commodo consequat ;
-- Duis aute irure dolor in reprehenderit in voluptate ;
-- Velit esse cillum dolore eu fugiat nulla pariatur ;
-- Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+Bolt is created using modern open source libraries, and is best suited to build sites in HTML5 with modern markup.
