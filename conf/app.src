@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/bolt/bolt/archive/refs/tags/3.7.4.1.tar.gz
-SOURCE_SUM=f638e7b465acb5ef263f76b38b6d21ad3f00be0cb5f9c812de07bf64e392f82a
+SOURCE_URL=https://github.com/bolt/core/archive/refs/tags/5.1.7.tar.gz
+SOURCE_SUM=552cfd2ed8d2b286e4871a33260f60fe98cd1d65fe465999a2305bed003ff79d
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
