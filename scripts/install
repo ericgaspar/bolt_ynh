@@ -106,11 +106,21 @@ ynh_script_progression --message="Configuring PHP-FPM..." --time --weight=1
 ynh_add_fpm_config
 
 #=================================================
+# ADD A CONFIGURATION
+#=================================================
+ynh_script_progression --message="Adding a configuration file..." --time --weight=1
+
+ynh_add_config --template="../conf/.env" --destination="$final_path/.env"
+
+chmod 400 "$final_path/.env"
+chown $app:$app "$final_path/.env"
+
+#=================================================
 # INSTALL LYCHEE WITH COMPOSER
 #=================================================
 ynh_script_progression --message="Installing $app with Composer..." --weight=15
 
-ynh_install_composer --install_args="--ignore-platform-reqs"
+ynh_install_composer #--install_args="--ignore-platform-reqs"
 
 #=================================================
 # BUILDING
@@ -127,16 +137,6 @@ pushd $final_path
 	php$phpversion bin/console doctrine:fixtures:load
 	php$phpversion bin/console server:start
 popd
-
-#=================================================
-# ADD A CONFIGURATION
-#=================================================
-# ynh_script_progression --message="Adding a configuration file..." --time --weight=1
-
-# ynh_add_config --template="some_config_file" --destination="$final_path/some_config_file"
-
-# chmod 400 "$final_path/some_config_file"
-# chown $app:$app "$final_path/some_config_file"
 
 #=================================================
 # SETUP SSOWAT

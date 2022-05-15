@@ -2,6 +2,6 @@ SOURCE_URL=https://github.com/bolt/bolt/archive/refs/tags/3.7.4.1.tar.gz
 SOURCE_SUM=f638e7b465acb5ef263f76b38b6d21ad3f00be0cb5f9c812de07bf64e392f82a
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=false
+SOURCE_IN_SUBDIR=true
 SOURCE_FILENAME=
 SOURCE_EXTRACT=true
