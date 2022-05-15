@@ -9,14 +9,14 @@
     "version": "5.1.7~ynh1",
     "url": "https://boltcms.io/",
     "upstream": {
-        "license": "free",
+        "license": "MIT",
         "website": "https://boltcms.io/",
         "demo": "https://demo.example.com",
         "admindoc": "https://docs.boltcms.io/5.0/getting-started/introduction",
         "userdoc": "https://yunohost.org/apps",
         "code": "https://github.com/bolt/bolt"
     },
-    "license": "free",
+    "license": "MIT",
     "maintainer": {
         "name": "John doe",
         "email": "john.doe@example.com"
