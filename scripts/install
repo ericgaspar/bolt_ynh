@@ -28,6 +28,7 @@ domain=$YNH_APP_ARG_DOMAIN
 path_url=$YNH_APP_ARG_PATH
 is_public=$YNH_APP_ARG_IS_PUBLIC
 admin=$YNH_APP_ARG_ADMIN
+projectname=$YNH_APP_ARG_PROJECTNAME
 
 app=$YNH_APP_INSTANCE_NAME
 
@@ -127,15 +128,11 @@ ynh_install_composer #--install_args="--ignore-platform-reqs"
 #=================================================
 ynh_script_progression --message="Building..." --weight=10
 
-ynh_exec_warn_less ynh_composer_exec --commands="create-project bolt/project myprojectname"
+ynh_exec_warn_less ynh_composer_exec --commands="create-project bolt/project $projectname"
 
 # Setup application config
 pushd $final_path
-	php$phpversion bin/console doctrine:database:create
-	php$phpversion bin/console doctrine:schema:create
-	#php$phpversion bin/console bolt:add-user --admin
-	php$phpversion bin/console doctrine:fixtures:load
-	php$phpversion bin/console server:start
+	php$phpversion bin/console bolt:setup
 popd
 
 #=================================================
